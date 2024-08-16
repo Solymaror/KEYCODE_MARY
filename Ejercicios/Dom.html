@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #61dafb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplicación del 8 por 12 es:</h1>
+        <p id="resultado">Haz clic en el texto siguiente</p>
+        <button id="boton">Mostrar resultado</button>
+    </div>
+    
+    <script>
+        document.getElementById("boton").addEventListener("click", function() {
+            const resultado = 8 * 12;
+            document.getElementById("resultado").innerText = `8 x 12 = ${resultado}`;
+        });
+    </script>
+</body>
+</html>
